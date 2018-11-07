@@ -1,0 +1,6 @@
+#ff2d55
+txt color #242424
+
+
+    font-family: 'Poppins', sans-serif;
+
