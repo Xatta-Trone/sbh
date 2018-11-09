@@ -80,7 +80,7 @@ a {
 	background-image: url(../img/hero.jpg);
 }
 
-.hero_area {
+.hero_area,.countdown_section {
     position: relative;
     background-size: cover;
     background-attachment: fixed;
@@ -90,7 +90,7 @@ a {
     z-index: 9;
 }
 
-.hero_area:before {
+.hero_area:before,.countdown_section:before {
     position: absolute;
     left: 0;
     top: 0;
@@ -132,4 +132,114 @@ a {
     background: transparent;
     border-color: #ff2d55;
     color: #fff;
+}
+
+.clock .wrapper {
+    display:  inline-block;
+    margin:  0 20px;
+    font-size:  20px;
+    color: #fff;
+}
+
+.clock .time {
+    font-size: 100px;
+    font-weight:  100;
+    line-height: 100px;
+}
+
+.section_heading span {
+    display: block;
+    font-weight: 200;
+    color: #ff2d55;
+    font-size: 65%;
+}
+
+.section_heading h2 {
+    color: #fff;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 50px;
+    position: relative;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.section_heading h2:after {
+    position: absolute;
+    left: 40%;
+    bottom: -5px;
+    width: 200px;
+    height: 2px;
+    background: #242424;
+    content: '';
+}
+
+.countdown_section {
+    padding: 60px 0;
+}
+
+.countdown_section{
+    background-image: url(../img/suhedulebg.jpg);
+    color: #242424;
+    padding: 80px 0;
+}
+.event_card .header_date {
+    background: #ff2d55;
+    color: #fff;
+    text-align: center;
+    font-size: 25px;
+}
+
+.list-group-item .title, .list-group-item .time {
+    font-weight: 600;
+}
+
+
+.event_details {
+    padding: 68px 0;
+}
+
+.event_details .section_heading {
+    margin-bottom: 20px;
+}
+ .section_heading.black h2{
+    color: #242424;
+}
+.event_card {
+    box-shadow: 0 0 20px #eee;
+    margin-top: 40px;
+}
+
+.about_section {
+    padding: 80px 0;
+}
+
+.section_heading {
+    margin-bottom: 50px;
+}
+.speaker_img img {
+    width: 100%;
+}
+
+.single-speaker {
+    text-align: center;
+    box-shadow: 0 0 10px #eee;
+    margin-bottom: 30px;
+}
+
+.speaker_info h3 {
+    font-weight: 600;
+    text-shadow: 0 0 1px;
+    text-transform: uppercase;
+    font-size: 26px;
+    margin: 0;
+}
+
+.speaker_info span {
+    color: rgb(36,36,36);
+    font-size: 15px;
+}
+
+.speaker_info {
+    padding: 15px 0;
 }
