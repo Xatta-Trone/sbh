@@ -3,15 +3,16 @@
 <head>
 	<title>SBH</title>
 
-	
+	<meta charset="utf-8">
 	<link href="https://fonts.googleapis.com/css?family=Poppins:100,200,400,600,700,900" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
 	<link rel="stylesheet" type="text/css" href="css/owl.carousel.css">
+	<link rel="stylesheet" type="text/css" href="css/lightbox.min.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link rel="stylesheet" type="text/css" href="css/responsive.css">
 </head>
-<body>
+<body data-spy="scroll" data-target="#mainmenu">
 
 	<div class="nav_area">
 		<div class="container">
@@ -22,13 +23,14 @@
 					</div>
 				</div>
 				<div class="col-lg-10 text-right">
-					<div class="mainmenu">
+					<div class="mainmenu" id="mainmenu">
 						<ul id="menu">
-							<li><a href="#" class="active">Home</a></li>
-							<li><a href="#">Home</a></li>
-							<li><a href="#">Home</a></li>
-							<li><a href="#">Home</a></li>
-							<li><a href="#">Home</a></li>
+							<li><a data-scroll href="#home">Home</a></li>
+							<li><a data-scroll href="#about">About</a></li>
+							<li><a data-scroll href="#schedule">Schedule</a></li>
+							<li><a data-scroll href="#speakers">Speakers</a></li>
+							<li><a data-scroll href="#gallery">Gallery</a></li>
+							<li><a data-scroll href="#contact">Contact</a></li>
 							<li><a href="#" class="callout sbh_btn">Register</a></li>
 						</ul>
 					</div>
@@ -37,7 +39,7 @@
 		</div>
 	</div>
 
-	<div class="hero_area h-100">
+	<div class="hero_area h-100" id="home">
 		<div class="container h-100">
 			<div class="row h-100 text-center align-items-center">
 				<div class="col-lg-12">
@@ -52,7 +54,7 @@
 		</div>
 	</div>
 
-	<div class="about_section">
+	<div class="about_section" id="about">
 		<div class="container">
 			<div class="row">
 				<div class="col-9 text-center mx-auto">
@@ -107,7 +109,7 @@
 	</div>
 
 
-	<div class="event_details">
+	<div class="event_details" id="schedule">
 		<div class="container">
 			<div class="row">
 				<div class="col-12">
@@ -195,7 +197,7 @@
 		</div>
 	</div>
 
-	<div class="speaker_section">
+	<div class="speaker_section" id="speakers">
 		<div class="container">
 			<div class="row">
 				<div class="col-12">
@@ -299,12 +301,110 @@
 		</div>
 	</div>
 
+
+	<div class="gallery_section" id="gallery">
+		<div class="container">
+			<div class="row">
+				<div class="col-12">
+					<div class="section_heading black">
+						<h2><span>See Photo</span> Gallery</h2>
+					</div>
+				</div>
+
+				<div class="col-12">
+					<div class="row">
+						<div class="col-lg-4 single_image" style="background-image: url(img/hero.jpg);">
+							<a href="img/hero.jpg" data-lightbox="hero" data-title="My caption"></a>
+						</div>
+						<div class="col-lg-4 single_image" style="background-image: url(img/hero.jpg);">
+							<a href="img/hero.jpg" data-lightbox="hero" data-title="My caption"></a>
+						</div>
+						<div class="col-lg-4 single_image" style="background-image: url(img/hero.jpg);">
+							<a href="img/hero.jpg" data-lightbox="hero" data-title="My caption"></a>
+						</div>
+						<div class="col-lg-4 single_image" style="background-image: url(img/hero.jpg);">
+							<a href="img/hero.jpg" data-lightbox="hero" data-title="My caption"></a>
+						</div>
+						<div class="col-lg-4 single_image" style="background-image: url(img/hero.jpg);">
+							<a href="img/hero.jpg" data-lightbox="hero" data-title="My caption"></a>
+						</div>
+						<div class="col-lg-4 single_image" style="background-image: url(img/hero.jpg);">
+							<a href="img/hero.jpg" data-lightbox="hero" data-title="My caption"></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="contact_section" id="contact">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-5">
+					<div class="left_content">
+						<h2>Get in Touch</h2>
+						<ul>
+							<li><i class="fas fa-phone"></i>+880 1750 457 111</li>
+							<li><i class="fas fa-at"></i>sbhabuet@gmail.com</li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-lg-7">
+					<form class="contact_form">
+						<input type="text" name="name" placeholder="Your name">
+						<input type="text" name="email" placeholder="Your email">
+						<input type="text" name="subject" placeholder="Subject">
+						<textarea placeholder="Message" name="message" rows="4"></textarea>
+						<input type="submit" name="submit" value="Send Message" class="sbh_btn">
+					</form>
+				</div>
+				<div class="mb-5"></div>
+				<div class="col-12 text-center text-muted mini_footer">
+					&copy; all rights reserved SBH-2018 || Developed BY <a target="_blank" href="https://www.facebook.com/monzurul.islam1112">Monzurul Islam</a>
+				</div>
+			</div>
+		</div>
+	</div>
+
 <script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/smoothscroll.js"></script>
+<script type="text/javascript" src="js/waypoint.js"></script>
 <script type="text/javascript" src="js/popper.min.js"></script>
 <script type="text/javascript" src="js/bootstrap.min.js"></script>
 <script type="text/javascript" src="js/owl.carousel.min.js"></script>
 <script type="text/javascript" src="js/jquery.countdown.min.js"></script>
+<script type="text/javascript" src="js/lightbox.min.js"></script>
 <script type="text/javascript" src="js/main.js"></script>
+<script type="text/javascript">
+	
+		    					//year/month/day
+		$('#clock').countdown('2019/02/20 12:00:00').on('update.countdown', function(event) {
+	  		var $this = $(this).html(event.strftime(''
+					+ '<div class="wrapper"><span class="time">%-D</span><br>day%!D</div><span class="slash">/</span>'
+					+ '<div class="wrapper"><span class="time">%H</span><br>hours</div><span class="slash">/</span>'
+					+ '<div class="wrapper"><span class="time">%M</span><br>minutes</div><span class="slash">/</span>'
+					+ '<div class="wrapper"><span class="time">%S</span><br>seconds</div>'));	
+		});
+
+	    $('body').scroll(function() {
+	        //console.log($('body').pageYOffset);
+	        if ($(this).scrollTop() >= 150) {        // If page is scrolled more than 50px
+	            //$('#return-to-top').fadeIn(200);   // Fade in the arrow
+	            $(".nav_area").addClass("nav_fixed");
+	        } else {
+	            //$('#return-to-top').fadeOut(200);   // Else fade out the arrow
+	            $(".nav_area").removeClass("nav_fixed");
+	        }
+	    });
+	    // $('#return-to-top').click(function() {      // When arrow is clicked
+	    //     $('body,html').animate({
+	    //         scrollTop : 0                       // Scroll to top of body
+	    //     }, 500);
+	    // });
+
+
+	    var scroll = new SmoothScroll('a[href*="#"]');
+</script>
 
 </body>
 </html>
