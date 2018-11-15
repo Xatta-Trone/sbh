@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Online Registration</title>
+
+	<meta charset="utf-8">
+	<link href="https://fonts.googleapis.com/css?family=Poppins:100,200,400,600,700,900" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/responsive.css">
+</head>
+<body data-spy="scroll" data-target="#mainmenu">
+
+
+	<div class="form_area hero_area">
+		<div class="container h-100">
+			<div class="row h-100 text-center align-items-center">
+				<div class="col-lg-12">
+					<div class="hero_txt">
+						<h1>Register</h1>
+						<a href="index.html">Home</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="registration_form mx-auto">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-6 mx-auto">
+					<form>
+
+					  <div class="form-group">
+					    <label for="name">Name</label>
+					    <input type="text" class="form-control" id="name" placeholder="Enter Your Name">
+					  </div>
+
+					  <div class="form-group">
+					    <label for="email">Email address</label>
+					    <input type="email" class="form-control" id="email" placeholder="name@example.com">
+					  </div>
+
+					  <div class="form-group">
+					    <label for="department">Department</label>
+					    <select class="form-control" id="department">
+					      <option>Select Department</option>
+					      <option value="EEE">EEE</option>
+					      <option value="CSE">CSE</option>
+					      <option value="ME">ME</option>
+					      <option value="CE">CE</option>
+					      <option value="WRE">WRE</option>
+					      <option value="IPE">IPE</option>
+					      <option value="NAME">NAME</option>
+					      <option value="CHE">CHE</option>
+					      <option value="ARCH">ARCH</option>
+					      <option value="MME">MME</option>
+					      <option value="URP">URP</option>
+					    </select>
+					  </div>
+
+					  <div class="form-group">
+					    <label for="session">Session/Batch</label>
+					    <input type="text" class="form-control" id="session" placeholder="2015-16">
+					  </div>
+
+					  <div class="form-group">
+					    <label for="RoomNo">Room No.</label>
+					    <input type="text" class="form-control" id="RoomNo" placeholder="1012">
+					  </div>
+
+					  <div class="form-group">
+					    <label for="contact">Mobile No</label>
+					    <input type="text" class="form-control" id="contact" placeholder="+880 XXXX XXX XXX">
+					  </div>
+
+
+					  <div class="form-group">
+					    <label for="marital">Marital Status</label>
+					    <select class="form-control" id="marital">
+					      <option>Select</option>
+					      <option value="Married">Married</option>
+					      <option value="unMarried">unMarried</option>
+					    </select>
+					  </div>
+
+					  <div class="form-group">
+					    <label for="contact_address">Present Address</label>
+					    <textarea class="form-control" id="contact_address" rows="3"></textarea>
+					  </div>
+
+					  <div class="form-group">
+					    <input type="submit" value="Submit" class="btn sbh_btn">
+					  </div>
+
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/smoothscroll.js"></script>
+<script type="text/javascript" src="js/waypoint.js"></script>
+<script type="text/javascript" src="js/popper.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
+<script type="text/javascript">
+
+	    $('body').scroll(function() {
+	        //console.log($('body').pageYOffset);
+	        if ($(this).scrollTop() >= 150) {        // If page is scrolled more than 50px
+	            //$('#return-to-top').fadeIn(200);   // Fade in the arrow
+	            $(".nav_area").addClass("nav_fixed");
+	        } else {
+	            //$('#return-to-top').fadeOut(200);   // Else fade out the arrow
+	            $(".nav_area").removeClass("nav_fixed");
+	        }
+	    });
+	    // $('#return-to-top').click(function() {      // When arrow is clicked
+	    //     $('body,html').animate({
+	    //         scrollTop : 0                       // Scroll to top of body
+	    //     }, 500);
+	    // });
+
+</script>
+
+</body>
+</html>
