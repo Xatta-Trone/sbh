@@ -38,6 +38,11 @@
 					  </div>
 
 					  <div class="form-group">
+					    <label for="NickName">Nickname</label>
+					    <input type="text" class="form-control" id="NickName" placeholder="Enter Your Nickname">
+					  </div>
+
+					  <div class="form-group">
 					    <label for="email">Email address</label>
 					    <input type="email" class="form-control" id="email" placeholder="name@example.com">
 					  </div>
@@ -61,21 +66,66 @@
 					  </div>
 
 					  <div class="form-group">
-					    <label for="session">Session/Batch</label>
+					    <label for="session">Graduation Year</label>
 					    <input type="text" class="form-control" id="session" placeholder="2015-16">
 					  </div>
 
 					  <div class="form-group">
+					    <label for="attachment">Attachment</label>
+					    <select class="form-control" id="attachment">
+					    	<option>Select</option>
+					    	<option value="attached">Attached</option>
+					    	<option value="resident">Resident</option>
+					    </select>
+					  </div>
+
+					  <div class="form-group" id="Room" style="display: none;">
 					    <label for="RoomNo">Room No.</label>
 					    <input type="text" class="form-control" id="RoomNo" placeholder="1012">
 					  </div>
 
+					    <div class="form-row">
+					      <div class="col">
+					      	<label for="DOB">Birth Date</label>
+					        <input type="date" class="form-control" id="DOB">
+					      </div>
+					      <div class="col">
+					      	<label for="gender">Gender</label>
+						    <select class="form-control" id="gender">
+						    	<option>Select</option>
+						    	<option value="male">Male</option>
+						    	<option value="female">Female</option>
+						    </select>
+					      </div>
+					    </div>
+
 					  <div class="form-group">
-					    <label for="contact">Mobile No</label>
+					    <label for="contact">Mobile No 1</label>
 					    <input type="text" class="form-control" id="contact" placeholder="+880 XXXX XXX XXX">
 					  </div>
 
+					  <div class="form-group">
+					    <label for="contact2">Mobile No 2(Optional)</label>
+					    <input type="text" class="form-control" id="contact2" placeholder="+880 XXXX XXX XXX">
+					  </div>
 
+
+					    <div class="form-row">
+					      <div class="col">
+					      	<label for="occupation">Occupation</label>
+					        <input type="text" class="form-control" id="occupation">
+					      </div>
+					      <div class="col">
+					      	<label for="homedistrict">Home District</label>
+						    <select class="form-control" id="homedistrict">
+						    	<option>Select</option>
+						    	<option value="dhaka">Dhaka</option>
+						    </select>
+					      </div>
+					    </div>
+
+
+<!-- 
 					  <div class="form-group">
 					    <label for="marital">Marital Status</label>
 					    <select class="form-control" id="marital">
@@ -83,15 +133,98 @@
 					      <option value="Married">Married</option>
 					      <option value="unMarried">unMarried</option>
 					    </select>
-					  </div>
+					  </div> -->
 
 					  <div class="form-group">
 					    <label for="contact_address">Present Address</label>
 					    <textarea class="form-control" id="contact_address" rows="3"></textarea>
 					  </div>
 
+
+					  <strong>Fillup this section carefully</strong>
+					  <p><strong>Registration:</strong> 1000/-</p>
+
+					  <strong>Day-1</strong>
+					    <div class="form-row">
+					      <div class="col">
+					      	<label for="d1la">Lunch(each 300tk)</label>
+					      	<select class="form-control" id="d1la">
+					      	  <option value="0" selected="">0</option>
+					      	  <option value="1">1</option>
+					      	  <option value="2">2</option>
+					      	  <option value="3">3</option>
+					      	  <option value="4">4</option>
+					      	  <option value="5">5</option>
+					      	  <option value="6">6</option>
+					      	  <option value="7">7</option>
+					      	  <option value="8">8</option>
+					      	  <option value="9">9</option>
+					      	  <option value="10">10</option>
+					      	</select>
+					      </div>
+					      <div class="col">
+					      	<label for="d1da">Dinner(each 350tk)</label>
+					      	<select class="form-control" id="d1da">
+					      	  <option value="0" selected="">0</option>
+					      	  <option value="1">1</option>
+					      	  <option value="2">2</option>
+					      	  <option value="3">3</option>
+					      	  <option value="4">4</option>
+					      	  <option value="5">5</option>
+					      	  <option value="6">6</option>
+					      	  <option value="7">7</option>
+					      	  <option value="8">8</option>
+					      	  <option value="9">9</option>
+					      	  <option value="10">10</option>
+					      	</select>
+					      </div>
+					    </div>
+
+					  <strong>Day-2</strong>
+					    <div class="form-row">
+					      <div class="col">
+					      	<label for="d2la">Lunch(each 300tk)</label>
+					      	<select class="form-control" id="d2la">
+					      	  <option value="0" selected="">0</option>
+					      	  <option value="1">1</option>
+					      	  <option value="2">2</option>
+					      	  <option value="3">3</option>
+					      	  <option value="4">4</option>
+					      	  <option value="5">5</option>
+					      	  <option value="6">6</option>
+					      	  <option value="7">7</option>
+					      	  <option value="8">8</option>
+					      	  <option value="9">9</option>
+					      	  <option value="10">10</option>
+					      	</select>
+					      </div>
+					      <div class="col">
+					      	<label for="d2da">Dinner(each 350tk)</label>
+					      	<select class="form-control" id="d2da">
+					      	  <option value="0" selected="">0</option>
+					      	  <option value="1">1</option>
+					      	  <option value="2">2</option>
+					      	  <option value="3">3</option>
+					      	  <option value="4">4</option>
+					      	  <option value="5">5</option>
+					      	  <option value="6">6</option>
+					      	  <option value="7">7</option>
+					      	  <option value="8">8</option>
+					      	  <option value="9">9</option>
+					      	  <option value="10">10</option>
+					      	</select>
+					      </div>
+					    </div>
+
+						<br>
+						<br>
+					    <div class="form-group">
+					      Total: <strong><span id="totalamount">1000</span> Taka</strong> 
+					    </div>
+
+
 					  <div class="form-group">
-					    <input type="submit" value="Submit" class="btn sbh_btn">
+					    <input type="submit" value="Pay and Confirm" class="btn sbh_btn">
 					  </div>
 
 					</form>
@@ -125,6 +258,38 @@
 	    //         scrollTop : 0                       // Scroll to top of body
 	    //     }, 500);
 	    // });
+
+	    $('#attachment').on('change',function(){
+	    	if ($(this).val() === 'resident') {
+	    		$('#Room').show();
+	    	}else{
+	    		$('#Room').hide();
+	    	}
+	    });
+
+	    function totalPayable(){
+	    	var day_1_lunch = $('#d1la').val();
+	    	var day_1_dinner = $('#d1da').val();
+	    	var day_2_lunch = $('#d2la').val();
+	    	var day_2_dinner = $('#d2da').val();
+
+	    	var basePrice = 1000;
+	    	var day_1_lun_unit = 300;
+	    	var day_1_din_unit = 350;
+	    	var day_2_lun_unit = 300;
+	    	var day_2_din_unit = 350;
+
+	    	var total_price = basePrice + (day_1_lunch*day_1_lun_unit) + (day_1_dinner*day_1_din_unit) + (day_2_lunch*day_2_lun_unit) + (day_2_dinner*day_2_din_unit);
+	    	$('#totalamount').text(total_price);
+
+	    	console.log(day_1_lunch,day_1_dinner,day_2_lunch,day_2_dinner,total_price);
+	    }
+
+	    totalPayable();
+
+	    $('#d1la, #d1da, #d2la, #d2da').on('change',function(){
+	    	totalPayable();
+	    });
 
 </script>
 
