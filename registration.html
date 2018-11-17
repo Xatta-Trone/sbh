@@ -29,100 +29,168 @@
 	<div class="registration_form mx-auto">
 		<div class="container">
 			<div class="row">
-				<div class="col-lg-6 mx-auto">
+				<div class="col-lg-7 mx-auto">
 					<form>
 
-					  <div class="form-group">
-					    <label for="name">Name</label>
-					    <input type="text" class="form-control" id="name" placeholder="Enter Your Name">
-					  </div>
+					<div class="form-row">
+						<div class="col">
+							<div class="form-group">
+							  <label for="name">Name</label>
+							  <input type="text" class="form-control" id="name" placeholder="Enter Your Name">
+							</div>
+						</div>
+						<div class="col-4">
+							<div class="form-group">
+							  <label for="NickName">Nickname</label>
+							  <input type="text" class="form-control" id="NickName" placeholder="Enter Your Nickname">
+							</div>
+						</div>
+					</div>
 
-					  <div class="form-group">
-					    <label for="NickName">Nickname</label>
-					    <input type="text" class="form-control" id="NickName" placeholder="Enter Your Nickname">
-					  </div>
 
-					  <div class="form-group">
-					    <label for="email">Email address</label>
-					    <input type="email" class="form-control" id="email" placeholder="name@example.com">
-					  </div>
+					<div class="form-group">
+					  <label for="department">Department</label>
+					  <select class="form-control" id="department">
+					    <option>Select Department</option>
+					    <option value="EEE">EEE</option>
+					    <option value="CSE">CSE</option>
+					    <option value="ME">ME</option>
+					    <option value="CE">CE</option>
+					    <option value="WRE">WRE</option>
+					    <option value="IPE">IPE</option>
+					    <option value="NAME">NAME</option>
+					    <option value="CHE">CHE</option>
+					    <option value="ARCH">ARCH</option>
+					    <option value="MME">MME</option>
+					    <option value="URP">URP</option>
+					  </select>
+					</div>
 
-					  <div class="form-group">
-					    <label for="department">Department</label>
-					    <select class="form-control" id="department">
-					      <option>Select Department</option>
-					      <option value="EEE">EEE</option>
-					      <option value="CSE">CSE</option>
-					      <option value="ME">ME</option>
-					      <option value="CE">CE</option>
-					      <option value="WRE">WRE</option>
-					      <option value="IPE">IPE</option>
-					      <option value="NAME">NAME</option>
-					      <option value="CHE">CHE</option>
-					      <option value="ARCH">ARCH</option>
-					      <option value="MME">MME</option>
-					      <option value="URP">URP</option>
-					    </select>
-					  </div>
+					<div class="form-row">
+						<div class="col">
+							<div class="form-group">
+							  <label for="session">Exam Session</label>
+							  <input type="text" class="form-control" id="session" placeholder="2015-16">
+							</div>
+						</div>
+						<div class="col">
+							<div class="form-group">
+							  <label for="graduation">Graduation Year</label>
+							  <input type="text" class="form-control" id="graduation" placeholder="1987">
+							</div>
+						</div>
+					</div>
 
-					  <div class="form-group">
-					    <label for="session">Graduation Year</label>
-					    <input type="text" class="form-control" id="session" placeholder="2015-16">
-					  </div>
+					<div class="form-group">
+					  <label for="attachment">Attachment</label>
+					  <select class="form-control" id="attachment">
+					  	<option>Select</option>
+					  	<option value="attached">Attached</option>
+					  	<option value="resident">Resident</option>
+					  </select>
+					</div>
 
-					  <div class="form-group">
-					    <label for="attachment">Attachment</label>
-					    <select class="form-control" id="attachment">
+					<div class="form-row">
+						<div class="col">
+							<div class="form-group" id="Room" style="display: none;">
+							  <label for="RoomNo">Room No.</label>
+							  <input type="text" class="form-control" id="RoomNo" placeholder="1012">
+							</div>
+						</div>
+						<div class="col">
+							<div class="form-group" id="Hall_Duration" style="display: none;">
+							  <label for="hall_duration">Hall Life Duration</label>
+							  <input type="text" class="form-control" id="hall_duration" placeholder="1 year">
+							</div>
+						</div>
+					</div>
+
+				    <div class="form-row">
+				      <div class="col">
+				      	<label for="DOB">Birth Date</label>
+				        <input type="date" class="form-control" id="DOB">
+				      </div>
+				      <div class="col">
+				      	<label for="gender">Gender</label>
+					    <select class="form-control" id="gender">
 					    	<option>Select</option>
-					    	<option value="attached">Attached</option>
-					    	<option value="resident">Resident</option>
+					    	<option value="male">Male</option>
+					    	<option value="female">Female</option>
 					    </select>
-					  </div>
+				      </div>
+				    </div>
 
-					  <div class="form-group" id="Room" style="display: none;">
-					    <label for="RoomNo">Room No.</label>
-					    <input type="text" class="form-control" id="RoomNo" placeholder="1012">
-					  </div>
+				    <div class="form-group">
+				      <label for="contact_address">Present Address</label>
+				      <textarea class="form-control" id="contact_address" rows="3"></textarea>
+				    </div>
 
-					    <div class="form-row">
-					      <div class="col">
-					      	<label for="DOB">Birth Date</label>
-					        <input type="date" class="form-control" id="DOB">
-					      </div>
-					      <div class="col">
-					      	<label for="gender">Gender</label>
-						    <select class="form-control" id="gender">
-						    	<option>Select</option>
-						    	<option value="male">Male</option>
-						    	<option value="female">Female</option>
-						    </select>
-					      </div>
-					    </div>
+				    <div class="form-row">
+				    	<div class="col">
+				    		<div class="form-group">
+				    		  <label for="anniversary_date">Anniversary Date</label>
+				    		  <input type="date" class="form-control datepicker" id="anniversary_date">
+				    		</div>
+				    	</div>
+				    	<div class="col">
+				    		<div class="form-group">
+				    		  <label for="postcode">PostCode</label>
+				    		  <input type="text" class="form-control" id="postcode">
+				    		</div>
+				    	</div>
+				    </div>
 
-					  <div class="form-group">
-					    <label for="contact">Mobile No 1</label>
-					    <input type="text" class="form-control" id="contact" placeholder="+880 XXXX XXX XXX">
-					  </div>
+				    <div class="form-row">
+				    	<div class="col">
+				    		<div class="form-group">
+				    		  <label for="contact">Cell Phone No.</label>
+				    		  <input type="text" class="form-control" id="contact" placeholder="+880 XXXX XXX XXX">
+				    		</div>
+				    	</div>
+				    	<div class="col">
+				    		<div class="form-group">
+				    		  <label for="contact2">Alternative Phone(optional)</label>
+				    		  <input type="text" class="form-control" id="contact2" placeholder="+880 XXXX XXX XXX">
+				    		</div>
+				    	</div>
+				    </div>
 
-					  <div class="form-group">
-					    <label for="contact2">Mobile No 2(Optional)</label>
-					    <input type="text" class="form-control" id="contact2" placeholder="+880 XXXX XXX XXX">
-					  </div>
+					<div class="form-group">
+						<label for="email">Email address</label>
+						<input type="email" class="form-control" id="email" placeholder="name@example.com">
+					</div>
 
 
-					    <div class="form-row">
-					      <div class="col">
-					      	<label for="occupation">Occupation</label>
-					        <input type="text" class="form-control" id="occupation">
-					      </div>
-					      <div class="col">
-					      	<label for="homedistrict">Home District</label>
-						    <select class="form-control" id="homedistrict">
-						    	<option>Select</option>
-						    	<option value="dhaka">Dhaka</option>
-						    </select>
-					      </div>
-					    </div>
+				    <div class="form-row">
+				      <div class="col">
+				      	<label for="occupation">Occupation</label>
+				        <input type="text" class="form-control" id="occupation" placeholder="Engineer">
+				      </div>
+				      <div class="col">
+				      	<label for="position">Position</label>
+					    <input type="text" name="position" id="position" class="form-control" placeholder="CEO">
+				      </div>
+				    </div>
+
+				    <div class="form-group">
+				    	<label for="organization">Organization</label>
+				    	<input type="text" class="form-control" id="organization" placeholder="name of organization">
+				    </div>
+
+				    <div class="form-row">
+				    	<div class="col">
+				    		<div class="form-group">
+				    		  <label for="spouse">Spouse Name</label>
+				    		  <input type="text" class="form-control" id="spouse" placeholder="Mrs. XXXX">
+				    		</div>
+				    	</div>
+				    	<div class="col">
+				    		<div class="form-group">
+				    		  <label for="spouse_profession">Spouse Profession</label>
+				    		  <input type="text" class="form-control" id="spouse_profession" placeholder=" Teacher">
+				    		</div>
+				    	</div>
+				    </div>
 
 
 <!-- 
@@ -135,37 +203,19 @@
 					    </select>
 					  </div> -->
 
-					  <div class="form-group">
-					    <label for="contact_address">Present Address</label>
-					    <textarea class="form-control" id="contact_address" rows="3"></textarea>
-					  </div>
+					<hr>
 
 
-					  <strong>Fillup this section carefully</strong>
+					  <strong>Participation Details</strong>
+					  <hr>
+					  <br>
 					  <p><strong>Registration:</strong> 1000/-</p>
 
-					  <strong>Day-1</strong>
-					    <div class="form-row">
-					      <div class="col">
-					      	<label for="d1la">Lunch(each 300tk)</label>
-					      	<select class="form-control" id="d1la">
-					      	  <option value="0" selected="">0</option>
-					      	  <option value="1">1</option>
-					      	  <option value="2">2</option>
-					      	  <option value="3">3</option>
-					      	  <option value="4">4</option>
-					      	  <option value="5">5</option>
-					      	  <option value="6">6</option>
-					      	  <option value="7">7</option>
-					      	  <option value="8">8</option>
-					      	  <option value="9">9</option>
-					      	  <option value="10">10</option>
-					      	</select>
-					      </div>
-					      <div class="col">
-					      	<label for="d1da">Dinner(each 350tk)</label>
+					  <strong>14<sup>th</sup> February 2019 (Day 01)</strong>
+					    <div class="form-group">
+					      	<label for="d1da">Dinner(@300tk/Box)</label>
 					      	<select class="form-control" id="d1da">
-					      	  <option value="0" selected="">0</option>
+					      	  <option value="0" selected="">Select Quantity</option>
 					      	  <option value="1">1</option>
 					      	  <option value="2">2</option>
 					      	  <option value="3">3</option>
@@ -177,15 +227,14 @@
 					      	  <option value="9">9</option>
 					      	  <option value="10">10</option>
 					      	</select>
-					      </div>
 					    </div>
 
-					  <strong>Day-2</strong>
-					    <div class="form-row">
-					      <div class="col">
-					      	<label for="d2la">Lunch(each 300tk)</label>
+					  <strong>15<sup>th</sup>February 2019 (Day 02)</strong>
+					    
+					      <div class="form-group">
+					      	<label for="d2la">Lunch(@300tk/Box)</label>
 					      	<select class="form-control" id="d2la">
-					      	  <option value="0" selected="">0</option>
+					      	  <option value="0" selected="">Select Quantity</option>
 					      	  <option value="1">1</option>
 					      	  <option value="2">2</option>
 					      	  <option value="3">3</option>
@@ -198,10 +247,10 @@
 					      	  <option value="10">10</option>
 					      	</select>
 					      </div>
-					      <div class="col">
-					      	<label for="d2da">Dinner(each 350tk)</label>
+					      <div class="form-group">
+					      	<label for="d2da">Grand Dinner(@700tk/Person)</label>
 					      	<select class="form-control" id="d2da">
-					      	  <option value="0" selected="">0</option>
+					      	  <option value="0" selected="">Select Quantity</option>
 					      	  <option value="1">1</option>
 					      	  <option value="2">2</option>
 					      	  <option value="3">3</option>
@@ -214,7 +263,23 @@
 					      	  <option value="10">10</option>
 					      	</select>
 					      </div>
-					    </div>
+					      <div class="form-group">
+					      	<label for="d2dda">Driver's Dinner(@300tk/Box)</label>
+					      	<select class="form-control" id="d2dda">
+					      	  <option value="0" selected="">Select Quantity</option>
+					      	  <option value="1">1</option>
+					      	  <option value="2">2</option>
+					      	  <option value="3">3</option>
+					      	  <option value="4">4</option>
+					      	  <option value="5">5</option>
+					      	  <option value="6">6</option>
+					      	  <option value="7">7</option>
+					      	  <option value="8">8</option>
+					      	  <option value="9">9</option>
+					      	  <option value="10">10</option>
+					      	</select>
+					      </div>
+					    
 
 						<br>
 						<br>
@@ -222,9 +287,37 @@
 					      Total: <strong><span id="totalamount">1000</span> Taka</strong> 
 					    </div>
 
+						<h4>Select Payment Method</h4>
 
-					  <div class="form-group">
+					    <div class="form-check">
+					      <input class="form-check-input" type="radio" name="exampleRadios" id="online" value="online">
+					      <label class="form-check-label" for="online">
+					        Online Payment
+					      </label>
+					    </div>
+					    <div class="form-check">
+					      <input class="form-check-input" type="radio" name="exampleRadios" id="bank" value="bank">
+					      <label class="form-check-label" for="bank">
+					        Bank Payment
+					      </label>
+					    </div>
+					    <div class="form-check">
+					      <input class="form-check-input" type="radio" name="exampleRadios" id="cash" value="cash">
+					      <label class="form-check-label" for="cash">
+					        Cash Payment
+					      </label>
+					    </div>
+
+					
+					<br>
+					  <div class="form-group" style="display: none;" id="onlinePayment">
 					    <input type="submit" value="Pay and Confirm" class="btn sbh_btn">
+					  </div>
+					  <div class="form-group" style="display: none;" id="bankPayment">
+					    <strong>By Bank Deposite (Sonali Bank BUET Branch AC No. XXXXXXXX)</strong>
+					  </div>
+					  <div class="form-group" style="display: none;" id="cashPayment">
+					    <strong>By Cash Deposite to Sher-E-Bangla Hall Directly</strong>
 					  </div>
 
 					</form>
@@ -261,34 +354,60 @@
 
 	    $('#attachment').on('change',function(){
 	    	if ($(this).val() === 'resident') {
-	    		$('#Room').show();
+	    		$('#Room,#Hall_Duration').show();
 	    	}else{
-	    		$('#Room').hide();
+	    		$('#Room,#Hall_Duration').hide();
 	    	}
 	    });
 
 	    function totalPayable(){
-	    	var day_1_lunch = $('#d1la').val();
 	    	var day_1_dinner = $('#d1da').val();
 	    	var day_2_lunch = $('#d2la').val();
 	    	var day_2_dinner = $('#d2da').val();
+	    	var day_2_driver_dinner = $('#d2dda').val();
 
 	    	var basePrice = 1000;
-	    	var day_1_lun_unit = 300;
-	    	var day_1_din_unit = 350;
+	    	var day_1_din_unit = 300;
 	    	var day_2_lun_unit = 300;
-	    	var day_2_din_unit = 350;
+	    	var day_2_din_unit = 700;
+	    	var day_2_driver_dinner_unit = 300;
 
-	    	var total_price = basePrice + (day_1_lunch*day_1_lun_unit) + (day_1_dinner*day_1_din_unit) + (day_2_lunch*day_2_lun_unit) + (day_2_dinner*day_2_din_unit);
+	    	var total_price = basePrice + (day_1_dinner*day_1_din_unit) + (day_2_lunch*day_2_lun_unit) + (day_2_dinner*day_2_din_unit) + (day_2_driver_dinner*day_2_driver_dinner_unit);
 	    	$('#totalamount').text(total_price);
 
-	    	console.log(day_1_lunch,day_1_dinner,day_2_lunch,day_2_dinner,total_price);
+	    	//console.log(day_1_dinner,day_2_lunch,day_2_dinner,total_price);
 	    }
 
 	    totalPayable();
 
-	    $('#d1la, #d1da, #d2la, #d2da').on('change',function(){
+	    $('#d1da, #d2la, #d2da, #d2dda').on('change',function(){
 	    	totalPayable();
+	    });
+
+	    $('input[name=exampleRadios]').change(function(){
+		    var paymentMethod = $('input[name=exampleRadios]:checked').val();
+		    //console.log(paymentMethod);
+
+		    switch (paymentMethod) {
+		    	case 'online':
+		    		$('#bankPayment').hide();
+		    		$('#cashPayment').hide();
+		    		$('#onlinePayment').show();
+		    		break;
+		    	case 'bank':
+		    		$('#cashPayment').hide();
+		    		$('#onlinePayment').hide();
+		    		$('#bankPayment').show();
+		    		break;
+		    	case 'cash':
+		    		$('#bankPayment').hide();
+		    		$('#onlinePayment').hide();
+		    		$('#cashPayment').show();
+		    		break;
+		    	default:
+		    		// statements_def
+		    		break;
+		    }
 	    });
 
 </script>
